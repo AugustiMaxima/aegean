@@ -16,3 +16,7 @@ That will depend on my availability. They say existential dread is a good motiva
 5. More extensive documentation on the code base and APIs.
 6. Other useful graph algorithms. Suggestions welcome.
 
+
+Current Progress:
+Efficient square and row implementation - Complete
+Universal data type token - In progress
