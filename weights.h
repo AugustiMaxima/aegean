@@ -19,7 +19,7 @@ struct  w_int:weight{
 }
 
 struct w_float:weight{
-    float w:
+    float w;
     w_float(float);
     int compare(weight&) override;
     int compare(w_int&);
