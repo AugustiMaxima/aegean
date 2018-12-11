@@ -7,7 +7,8 @@ class w_float;
 
 struct w_union{
     int _class;
-    void* object = NULL;
+    void* object = nullptr;
+    operator void*();
 }
 
 class matching{

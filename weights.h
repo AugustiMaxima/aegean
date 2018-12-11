@@ -3,7 +3,7 @@
 
 #include "weight.h"
 
-struct  w_int:weight{
+struct  w_int: public weight{
     int w;
     w_int(int);
     int compare(weight&) override;
@@ -18,7 +18,8 @@ struct  w_int:weight{
     ~w_int();
 }
 
-struct w_float:weight{
+struct w_float: public weight{
+    static float tolerance;
     float w;
     w_float(float);
     int compare(weight&) override;
