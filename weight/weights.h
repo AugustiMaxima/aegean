@@ -16,7 +16,7 @@ struct  w_int: public weight{
     weight& add(vessel&);
     void match(matching&) override;
     ~w_int();
-}
+};
 
 struct w_float: public weight{
     static float tolerance;
@@ -32,6 +32,6 @@ struct w_float: public weight{
     weight& add(vessel&);
     void match(matching&) override;
     ~w_float();
-}
+};
 
 #endif

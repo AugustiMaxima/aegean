@@ -3,7 +3,7 @@
 
 #include <functional>
 #include "weight.h"
-#include "square.h"
+#include "../collections/square.h"
 
 //The basic implementation of dynamic weight objects
 //No need to define a new data type, just implement the cross addition and comparison rules
@@ -16,8 +16,8 @@ class vessel : public weight{
     static square<std::function<int(vessel&,vessel&)>>* mx_cmp;
     void* core;
     int type;
-    virtual square<<std::function<vessel&<vessel&,vessel&>>& getmx_add(bool=false);
-    virtual square<<std::function<int<vessel&,vessel&>>& getmx_cmp(bool=false);
+    virtual square<std::function<vessel&(vessel&,vessel&)>>& getmx_add(bool=false);
+    virtual square<std::function<int(vessel&,vessel&)>>& getmx_cmp(bool=false);
     protected:
     static square<std::function<vessel&(vessel&,vessel&)>> mx_add_base;
     static square<std::function<int(vessel&,vessel&)>> mx_cmp_base;
@@ -32,7 +32,7 @@ class vessel : public weight{
     virtual void setmx_cmp(square<std::function<int(vessel&,vessel&)>>&);
     virtual void resetmx_add();
     virtual void resetmx_cmp();
-    void ins_mx_add(std::function<vessel&(vessel&,vessel&)&,int,int,bool=false);
+    void ins_mx_add(std::function<vessel&(vessel&,vessel&)>&,int,int,bool=false);
     void ins_mx_cmp(std::function<int(vessel&,vessel&)>&,int,int,bool=false);
     ~vessel();
     virtual weight& add(w_int&);

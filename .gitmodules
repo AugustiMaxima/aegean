@@ -1,0 +1,3 @@
+[submodule "collections/hector"]
+	path = collections/hector
+	url = https://github.com/augustimaxima/hector

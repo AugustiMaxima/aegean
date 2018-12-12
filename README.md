@@ -14,10 +14,13 @@ That will depend on my availability. They say existential dread is a good motiva
 3. Basic APIs for accessing and processing the graph objects
 4. Useful common algorithms, BFS, DFS, Minimum Spanning Trees and SSSP, etc.
 5. Active model and customizable jobs.
+6. Runtime reachability
 6. More extensive documentation on the code base and APIs.
 7. Other useful graph algorithms. Suggestions welcome.
 
 
 Current Progress:
 Efficient square and row implementation - Complete
-Universal data type token - In progress
+Universal data type token - Code Completete
+Graph (Aegean) - Started
+Symbolic Representation - Started

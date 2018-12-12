@@ -9,7 +9,7 @@ struct w_union{
     int _class;
     void* object = nullptr;
     operator void*();
-}
+};
 
 class matching{
     w_union l;
@@ -20,6 +20,6 @@ class matching{
     void insert(vessel&);
     weight& add();
     int comp();
-}
+};
 
 #endif

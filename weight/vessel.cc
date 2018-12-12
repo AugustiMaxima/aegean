@@ -21,10 +21,10 @@ square<<std::function<int<vessel&,vessel&>>& vessel::getmx_cmp(bool base){
 vessel::vessel(void* core,int type):core(core), type(type){}
 
 vessel& vessel::add(vessel& operand){
-    return getmx_add(*this, operand);
+    return getmx_add()[type][operand.type](*this, operand);
 }
 int vessel::compare(vessel& operand){
-    return getmx_cmp(*this, operand);
+    return getmx_cmp()[type][operand.type](*this, operand);
 }
 
 weight& vessel::add(weight& operand){

@@ -3,7 +3,7 @@
 
 #include <functional>
 #include "vessel.h"
-#include "hector.h"
+#include "../collections/hector.h"
 
 
 //essentially a static container for implementing new methods
@@ -18,7 +18,6 @@ class WESSEL{
     static hector<std::function<int(vessel&,w_int&)>> vcint;
     static hector<std::function<int(vessel&,w_float&)>> vcfloat;
     friend class vessel;
-}
-
+};
 
 #endif
